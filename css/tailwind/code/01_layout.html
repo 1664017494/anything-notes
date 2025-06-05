@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex h-screen flex-col md:flex-row">
+        <div class="flex flex-col gap-2 p-2 md:w-52">
+            <div class="h-24 bg-sky-400 rounded-lg flex items-end justify-end p-2 ">Logo</div>
+            <div class="flex flex-row md:flex-col gap-2 md:flex-1">
+                <div class="menu h-12 rounded-lg bg-gray-400 flex items-center justify-center grow hover:bg-sky-200 md:grow-0">Menu1</div>
+                <div class="menu h-12 rounded-lg bg-gray-400 flex items-center justify-center grow hover:bg-sky-200 md:grow-0">Menu2</div>
+                <div class="menu h-12 rounded-lg bg-gray-400 flex items-center justify-center grow hover:bg-sky-200 md:grow-0">Menu3</div>
+                <div class="others grow bg-gray-400 rounded-lg hidden md:block md:flex-1"></div>
+                <div class="menu w-16 h-12 rounded-lg bg-gray-400 flex items-center justify-center md:w-auto">Logout</div>
+            </div>
+        </div>
+        <div class="flex-1 p-2">
+            Content
+        </div>
+    </div>
+</body>
+</html>
