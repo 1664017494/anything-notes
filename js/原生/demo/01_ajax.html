@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. 创建请求对象
+var xhr = new XMLHttpRequest()
+// 2. 设置请求的方式和url
+xhr.open("GET", 'https://mock.mengxuegu.com/mock/65a91543c4cd67421b34c898/movie/movieList#!method=get')
+// 3. 发送数据
+xhr.send()
+// 4. 接收数据
+xhr.onreadystatechange = function () {
+    if(xhr.readyState == 4) {
+        if(xhr.status == 200) {
+            console.log(JSON.parse(xhr.responseText));
+            
+        }
+    }
+}
+
+    </script>
+</body>
+</html>
